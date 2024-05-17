@@ -1,17 +1,17 @@
 const score = 400; 
-// console.log(score);
+console.log(score);
 
 const balance = new Number(100); // another way of defining a number.
-// console.log(balance);
+console.log(balance);
 
-// console.log(balance.toString());
-// console.log(balance.toFixed(2));
+console.log(balance.toString());
+console.log(balance.toFixed(2));
 
 const dec = 79.534;
-// console.log(dec.toFixed());
+console.log(dec.toFixed());
 
 const hundreds = 1000000;
-// console.log(hundreds.toLocaleString('en-IN')); // en-in represents the indian standard , by default it shows US standard.
+console.log(hundreds.toLocaleString('en-IN')); // en-in represents the indian standard , by default it shows US standard.
 
 
 // +++++++++++++++++++++++++++ Maths +++++++++++++++++++++++++++++++++++++++++
