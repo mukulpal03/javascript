@@ -14,7 +14,7 @@ console.log(gameName.toUpperCase());
 const newString = gameName.substring(0,4);
 console.log(newString);
 
-const anotherString = gameName.slice(-3);
+const anotherString = gameName.slice(-3);   // length-num
 console.log(anotherString);
 
 const newString1 = "       mukul       ";
