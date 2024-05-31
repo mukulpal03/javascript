@@ -11,7 +11,7 @@ console.log("outer a: ", a);   // global scope
 // console.log(b);
 console.log(c);   // that's why var should be avoided.
 
-// important note => jab browser m inspect m jaake scope check karte h it is different from the one we use it in her using node.
+// important note => jab browser m inspect m jaake scope check karte h it is different from the one we use it in here using node.
 
 
 // nested scoping
