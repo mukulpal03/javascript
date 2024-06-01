@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLang(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`        // inner html pura tree traverse karta hai isliye its not a better approach to use it
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLang("python")
+    addLang("typeScript")
+
+    // another better optimised way, why? coz the above way will take too much time as it will traverse the whole tree everytime
+
+    function addOptiLanguage(langName) {        // yaha pe pura tree traverse nahi karna pad raha
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptiLanguage("golang")
+
+    // Edit
+
+    const secLang = document.querySelector('li:nth-child(2)')
+    // secLang.innerHTML = "mojo"  // again we will avoid it coz of optimisation
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo"
+    secLang.replaceWith(newLi)
+
+    // another edit
+    const firstLang = document.querySelector('li')
+    firstLang.outerHTML = '<li>Typescript</li>'
+
+    // remove
+
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>
+</html>
