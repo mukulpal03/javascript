@@ -17,7 +17,7 @@
 - Classes
 - Instances (new, this)
 
-## 4 Pillars       // study via chatgpt
+## 4 Pillars       (study via chatgpt)
 - Abstraction
 - Encapsulation
 - Inheritance
