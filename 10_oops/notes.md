@@ -7,6 +7,7 @@
 - collection of properties and methods
 
 ## why use OOPS
+- to structure and organize the code
 
 ## parts of OOPS
 - Object literal
